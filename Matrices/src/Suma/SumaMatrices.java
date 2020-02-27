@@ -1,7 +1,7 @@
 package Suma;
 import java.util.Scanner;
 public class SumaMatrices{ public static void main(String[] args) {
-       int m, n,i, j, a[][],b[][], c[][];
+       int m, n, i, j, a[][],b[][], c[][];
        Scanner bolsaPlastico=new Scanner(System.in);
         System.out.println("Prog. que suma 2 Matriz");
         System.out.println("Cuantas filas tendran las matrices? ");
@@ -31,6 +31,20 @@ public class SumaMatrices{ public static void main(String[] args) {
                  c[i][j]=a[i][j]+b[i][j];
              }
          }
+            System.out.println("la matriz 1 es : ");
+           for(i=0;i<m;i++){
+             for(j=0;j<n;j++){
+                 System.out.print("\t"+a[i][j]);
+             }
+               System.out.println("");
+           }
+           System.out.println("la matriz 2 es : ");
+           for(i=0;i<m;i++){
+             for(j=0;j<n;j++){
+                 System.out.print("\t"+b[i][j]);
+             }
+               System.out.println("");
+           }
         System.out.println("la matriz resultante es : ");
            for(i=0;i<m;i++){
              for(j=0;j<n;j++){
